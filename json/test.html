@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Hello HTML</h1>
+	<div>
+		<p>This is sample text.</p>
+		<!-- Abbrivation tag-->
+		<abbr id="anId" class="jargon" style="color:purple;" title="Hypertext Markup Language">HTML</abbr>
+		
+		<!-- Strike tag -->
+		<strike>Strike</strike> 
+		<br>
+		Hello
+		<!-- wbr tag -->
+		<p>The XML<wbr>Http<wbr>Request object is the key to AJAX.</p>
+
+		<!-- var tag -->
+		<p>A simple equation: <var>x</var> = <var>y</var> + 2 </p>
+		
+		<!-- Ruby tag in html -->
+		<ruby>
+	    	1 <rp>(</rp><rt>One</rt><rp>)</rp>
+	        2 <rp>(</rp><rt>Two</rt><rp>)</rp>
+	    </ruby>
+	</div>
+
+	<!-- Progress tag -->
+	<p>Progress: <progress id="bar" value="0" max="100"><span>0</span>%</progress></p>
+	<script type="text/javascript">
+		var i = 0;
+		var progressBar = document.getElementById("bar");
+		function countNumbers(){
+			if(i < 100){
+				i = i + 1;
+				progressBar.value = i;
+				// For browsers that don't support progress tag
+				progressBar.getElementsByTagName("span")[0].textContent = i;
+			}
+			// Wait for sometime before running this script again
+			setTimeout("countNumbers()", 500);
+		}
+		countNumbers();
+	</script>
+
+	<!-- pre tag -->
+	<pre>
+    The pre
+        element preserves      spaces,
+            line-breaks, tabs...
+            							By DAY TOY
+    </pre>
+
+    <!-- Mark tag -->
+    <p>This is <mark>Mark Tag</mark> Sample.</p>
+
+
+</body>
+</html>

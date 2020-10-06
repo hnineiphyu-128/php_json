@@ -1,0 +1,125 @@
+AMP Package
+===========
+
+Apache MySQL PHP,Perl,Python
+
+WAMP => Window AMP
+LAMP => Linux AMP
+MAMP => Mac AMP
+XAMPP => Cross-Platform AM PHP, Perl
+
+
+date("y-m-d"); => 20-09-30 
+date("Y-M-D"); => 2020-Sep-Wed 
+
+Compraction Operator
+====================
+
+==, x > y, x < y, x >= y, x <= y,
+=== -> datatype ပါ တူရမယ်။
+
+Logical Operator
+
+|| , && , !
+
+
+Condition
+=========
+
+//one condition
+	$x = 10;
+	$y = 10;
+	if ($x == $y) {
+		echo "X and Y are Equal!!";
+	}
+
+//two condition
+	date_default_timezone_set("Asia/Yangon");
+	$t = date("H");
+	if($t == 18){
+		echo "Break Time!";
+	}else{
+		echo "Lecture Time!";
+	}
+
+//many ocndition
+	echo "<br>";
+	$d = date("D");
+	if($d == "Mon"){
+		echo "This day is Monday";
+	}else if($d == "Tue"){
+		echo "This day is Tuesday";
+	}else if($d == "Wed"){
+		echo "This day is Wednesday";
+	}else if($d == "Thur"){
+		echo "This day is Thursday";
+	}else if($d == "Fri"){
+		echo "This day is Friday";
+	}else{
+		echo "This day is Holiday";
+	}
+
+//switch condition
+	$z = 3;
+	echo "<br>";
+	switch ($z) {
+		case 1:
+			echo "This is Case 1.";
+			break;
+		case 2:
+			echo "This is Case 2.";
+			break;
+		case 3:
+			echo "This is Case 3.";
+			break;
+		case 4:
+			echo "This is Case 4.";
+			break;
+		
+		default:
+			echo "This Case is 0.";
+			break;
+	}
+
+Looping
+========
+
+//for loop
+	for (initial state; condition state ; option) { 
+		# code...
+	}
+
+//while loop
+	$num = 50;
+	$j = 0; =>initial state
+	while ($j < 10 =>condition state) {
+		$num--; =>action
+		$j++; =>option
+	}
+
+//do while loop
+	$n = 50;
+	$k = 0; =>initial state
+	do{
+		$n++; =>action
+		$k++; =>option
+	}while ($k < 10 =>condition state);
+
+//foreach loop
+	
+
+Super Variable 
+===============
+
+=> PHP က Buildin variable
+
+the most used
+$_GET  => form ရဲ့ method က GET နဲ့ ရေးရင်
+$_POST  => form ရဲ့ method က POST နဲ့ ရေးရင်
+$_SESSION
+$_REQUEST
+$_COOKIE
+$_FILES
+
+
+	
